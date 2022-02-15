@@ -1,0 +1,30 @@
+version: '2.4'
+
+services:
+  agent1:
+    hostname: agent1
+    image: "cake-build-agent"
+    restart: on-failure
+    mem_limit: 3G
+    env_file: azp.env
+    
+  agent2:
+    hostname: agent2
+    image: "cake-build-agent"
+    restart: on-failure
+    mem_limit: 3G
+    env_file: azp.env
+    
+  agent3:
+    hostname: agent3
+    image: "cake-build-agent"
+    restart: on-failure
+    mem_limit: 3G
+    env_file: azp.env
+    
+  agent4:
+    hostname: agent4
+    image: "cake-build-agent"
+    restart: on-failure
+    mem_limit: 3G
+    env_file: azp.env
