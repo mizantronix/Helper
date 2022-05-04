@@ -16,6 +16,9 @@ choco install notepadplusplus -y
 choco install fiddler -y
 choco install far -y
 choco install wsl -y
+choco install putty -y
+choco install nodejs -y
+choco install tightvnc -y
 
 if ($additionalSoft)
 {
