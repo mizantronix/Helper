@@ -19,6 +19,7 @@ choco install wsl -y
 choco install putty -y
 choco install nodejs -y
 choco install tightvnc -y
+choco install dotnet-sdk -y
 
 if ($additionalSoft)
 {
