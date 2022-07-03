@@ -28,3 +28,9 @@ rm -f packages.microsoft.gpg
 sudo apt update
 sudo apt install code
 
+#pwsh
+sudo apt-get install -y wget apt-transport-https software-properties-common
+wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb"
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install -y powershell
