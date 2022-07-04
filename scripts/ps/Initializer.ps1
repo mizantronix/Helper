@@ -25,4 +25,6 @@ if ($additionalSoft)
 {
     choco install steam-client -y
     choco install telegram.install -y
+    choco install origin -y
+    choco install battle.net -y
 }
