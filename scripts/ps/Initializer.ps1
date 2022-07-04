@@ -20,6 +20,7 @@ choco install putty -y
 choco install nodejs -y
 choco install tightvnc -y
 choco install dotnet-sdk -y
+choco install yandexdisk -y
 
 if ($additionalSoft)
 {
