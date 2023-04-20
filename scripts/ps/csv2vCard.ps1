@@ -24,8 +24,8 @@ foreach($str in $content) {
 	$res += 'VERSION:3.0'
 	
 	$names = $parts[0].Split(' ')
-	$res += "N:$($names[1]);$($names[0]);;;"
-	$res += "FN:$($names[0]) $($names[1])"
+	$res += "N:$($names[0]);$($names[1]);;;"
+	$res += "FN:$($names[1]) $($names[0])"
 	
 	$res += "ORG:$org;$($parts[1])"
 	
