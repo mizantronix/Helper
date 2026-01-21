@@ -1,7 +1,18 @@
+#################################################
+#                SIMPLE FUNCTIONS               #
+#################################################
 function env {
    return ((gci env:*).GetEnumerator() | Sort-Object Name | Out-String)
 }
 
+function profile {
+  code $PROFILE
+}
+
+
+#################################################
+#             NOT SO SIMPLE FUNCTIONS           #
+#################################################
 function Clean-Offset {
   <#
   .SYNOPSIS
