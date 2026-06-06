@@ -9,3 +9,7 @@ New-Item -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2
 Set-ItemProperty -Path "HKCU:\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" -Name "(default)" -Value "" 
 Stop-Process -Name explorer -Force
 Start-Process explorer
+
+$PolicyPath = 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\System'
+if (-not (Test-Path $PolicyPath)) { New-Item -Path $PolicyPath -Force | Out-Null }
+Set-ItemProperty -Path $PolicyPath -Name 'AllowClipboardHistory' -Value 1 -Type DWord -Force
